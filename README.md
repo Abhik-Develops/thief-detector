@@ -1,36 +1,68 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Thief Detector
 
-## Getting Started
+Thief Detector is a web application built with Next.js, React Webcam, and TensorFlow's COCO-SSD model. It allows users to detect intruders and potential thieves using their device's webcam.
 
-First, run the development server:
+## Live Demo: https://thief-detector.vercel.app/
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## Features
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- Real-time object detection using TensorFlow's COCO-SSD model.
+- Utilizes the device's webcam for live video input.
+- Alerts users when potential intruders are detected.
+- Simple and intuitive user interface.
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+## Installation
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+1. Clone the repository:
 
-## Learn More
+   ```bash
+   git clone https://github.com/Abhik-Develops/thief-detector.git
+   ```
 
-To learn more about Next.js, take a look at the following resources:
+2. Navigate to the project directory:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+   ```bash
+   cd thief-detector
+   ```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+3. Install dependencies:
 
-## Deploy on Vercel
+   ```bash
+   npm install
+   ```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Usage
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+1. Start the development server:
+
+   ```bash
+   npm run dev
+   ```
+
+2. Open your browser and visit `http://localhost:3000` to access the application.
+
+3. Grant permission to access your webcam when prompted.
+
+4. The application will start detecting objects in real-time using your webcam feed. If potential intruders are detected, the system will alert you.
+
+## Configuration
+
+- You can adjust various settings and parameters in the source code to customize the behavior of the Thief Detector application.
+
+## Technologies Used
+
+- Next.js: A React framework for building server-side rendered (SSR) and statically generated web applications.
+- React Webcam: A React component for accessing the user's webcam.
+- TensorFlow.js: A JavaScript library for training and deploying machine learning models in the browser and on Node.js.
+- COCO-SSD: A pre-trained object detection model for identifying and localizing multiple objects in an image or video.
+
+## Contributing
+
+Contributions are welcome! If you'd like to contribute to this project, please follow these steps:
+
+1. Fork the repository.
+2. Create a new branch (`git checkout -b feature/your-feature-name`).
+3. Make your changes.
+4. Commit your changes (`git commit -am 'Add new feature'`).
+5. Push to the branch (`git push origin feature/your-feature-name`).
+6. Create a new pull request.
